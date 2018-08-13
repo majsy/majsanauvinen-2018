@@ -1,0 +1,12 @@
+{
+  "name": "majsanauvinen-2018",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "git@github.com:majsy/majsanauvinen-2018.git",
+  "author": "majsy <madeleineauvinen@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel --open --no-cache --no-hmr src/index.html ",
+    "build:parcel": "parcel build src/index.html --out-dir dist --public-url ./ --no-minify"
+  }
+}
