@@ -8,5 +8,11 @@
   "scripts": {
     "dev": "parcel --open --no-cache --no-hmr src/index.html ",
     "build:parcel": "parcel build src/index.html --out-dir dist --public-url ./ --no-minify"
+  },
+  "devDependencies": {
+
+  },
+  "dependencies": {
+    "node-sass": "4.9.3"
   }
 }
