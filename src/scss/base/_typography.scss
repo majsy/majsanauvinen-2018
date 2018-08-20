@@ -1,0 +1,31 @@
+@import './variables';
+@import './mixins';
+
+body {
+  font-size: 62.5%;
+}
+
+.display1 {
+  color: $watermelon;
+  font-size: 4.2rem;
+  font-weight: 700;
+  font-family: 'Karla', sans-serif;
+  line-height: 1.1;
+  letter-spacing: -0.4px;
+}
+
+.display2 {
+  font-size: 5.5rem;
+}
+
+@include breakpoint(tablet) {
+  .display1 {
+    font-size: 3.5rem;
+  }
+}
+
+@include breakpoint(mobile) {
+  .display1 {
+    font-size: 2.8rem;
+  }
+}

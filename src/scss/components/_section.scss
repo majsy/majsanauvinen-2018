@@ -1,0 +1,19 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+// global paddings
+.about-section,
+.home-section,
+.project-section,
+.header,
+.footer {
+  padding: 0 $global-gutter;
+
+  @include breakpoint(tablet) {
+    padding: 0 $global-gutter-tablet;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 0 $global-gutter-mobile;
+  }
+}

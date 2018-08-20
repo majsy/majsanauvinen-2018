@@ -1,0 +1,6 @@
+@import '../../base/variables';
+
+.project-section {
+  @include size(100%, 100vh);
+  background-color: $white;
+}
