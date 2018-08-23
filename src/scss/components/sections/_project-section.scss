@@ -1,6 +1,57 @@
 @import '../../base/variables';
 
 .project-section {
-  @include size(100%, 100vh);
+  @include size(100%);
   background-color: $white;
+
+  .project-link {
+    padding: 30px 0;
+    display: block;
+
+    .display3 {
+      color: $blue;
+      padding-top: 10px;
+    }
+
+    .img-container {
+      height: auto;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      pointer-events: none;
+
+      &.stonewall {
+        width: 500px;
+      }
+
+      &.chobani {
+        width: 450px;
+      }
+
+      &.gluten {
+        width: 380px;
+      }
+
+      &.midwives4all {
+        width: 500px;
+      }
+      
+      img {
+        @include size(100%);
+      }
+    }
+
+    &:hover {
+      .display2,
+      .display3 {
+        color: $blue-lighter;
+      }
+
+      .img-container {
+        opacity: 1;
+      }
+    }
+  }
 }

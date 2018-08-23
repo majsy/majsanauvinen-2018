@@ -10,7 +10,7 @@
     "build:parcel": "parcel build src/index.html --out-dir dist --public-url ./ --no-minify"
   },
   "devDependencies": {
-
+    "mustache": "^2.3.2"
   },
   "dependencies": {
     "node-sass": "4.9.3"
